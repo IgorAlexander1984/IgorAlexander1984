@@ -1,1 +1,8 @@
 This is some python code using cuML to solve a classification problem based on a kaggle data-set.
+
+Techniques used:
+- searching is data-set is installed and unpacked with os
+- building dictionaries, which contain all file locations
+- shrinking all images and some feature engineering with OpenCV
+- loading cuML libraries and defintion of a dictionary comprising all parameters to test and fit
+- looping throught the dictionary and using GridSearchCV
