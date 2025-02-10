@@ -1,3 +1,15 @@
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                        10.02.2025
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+This is still not a functioning notebook, and 
+represents more of a mess trying to make things work.
+I still have to figure out how to use make_pipeline, and
+GridSearchCV (or equivalent) in combination with dask on 
+two GPUs. Maybe I will retun to this project after few 
+weeks/months when I have tried out approaches like e.g.,
+Optuna.
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 This is some python code using cuML-dask to solve a classification problem based on a kaggle data-set. 
 In crontrast to the previous folder we are now splitting the work-load and utilizing multiple GPUs at the same time,
 
@@ -7,4 +19,6 @@ Techniques used:
 - building dictionaries, which contain all file locations
 - shrinking all images and some feature engineering with OpenCV
 - loading cuML-dask libraries and defintion of a dictionary comprising all parameters to test and fit
++ here the mess starts and I will fix it later
++ e.g., Optuna might be a good canidate to try in combination with cupy and without dask
 - looping throught the dictionary and using GridSearchCV
