@@ -1,1 +1,10 @@
-this is the first attempt to analyse time-series and to get familiar with TSA
+First attempt to analyse time-series and to get familiar with TSA/TSF
+This is some python code using cuML to solve a time-series forecasting problem based on a kaggle data-set.
+
+Techniques used:
+- combining the data files based on the location (state) to get a combines DataFrame
+- some basic EDA, leading to the combination of the same metric with different units
+- calculating the mean for erntries having the same date-time and removing NaN values
+- calculation of a rolling average to remove spikes and subsequent outlier removal
+- loading cuML libraries and definition of a dictionary comprising all parameters to test and fit
+- looping throught the parameter-dictionary and using GridSearchCV
